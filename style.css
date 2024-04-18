@@ -1,0 +1,41 @@
+body {
+    background-color: tan;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modeSelector {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    align-items: center;
+}
+#modeSelector > div {
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-weight: bold;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px black;
+}
+#modeSelector > div:hover {
+    cursor: pointer;
+    rotate: 3deg;
+    background-color: rgb(240, 204, 137);
+}
+
+@media only screen and (min-width: 768px) {
+    #modeSelector {
+        grid-template-columns: 1fr 1fr;
+    }
+}
