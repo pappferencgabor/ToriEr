@@ -197,6 +197,7 @@ function showNext(num) {
         console.log(quizobj);
 
         htmlcode += `<h2 id="quizTitle">${quizobj.cim}</h2>`;
+        htmlcode += `<h3>${num+1}/${quiz.length}</h3>`;
         htmlcode += `<h2 id="quizQuestion">${quizobj.kerdes}</h2>`;
         htmlcode += '<div id="quizImages">';
 

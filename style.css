@@ -130,6 +130,8 @@ select {
     background-color: rgb(100, 0, 0);
 }
 
+
+
 #modeSelector > button,
 #quizOptions > button, 
 #result > button,
@@ -142,6 +144,9 @@ select {
     color: wheat;
     cursor: pointer;
     transition: 0.5s;
+}
+#quizOptions > button {
+    width: 150px;
 }
 #modeSelector > button:hover,
 #quizOptions > button:hover,
